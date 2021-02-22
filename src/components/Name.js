@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
-export default function Name(){
+const none = <h2>HAY NO SE</h2>;
+
+const Name = function(){
     return(
-        <>
+        <Fragment>
             <h2>Ivan Mendoza</h2>
             <span>Web development</span>
             <div>
@@ -11,8 +13,11 @@ export default function Name(){
                     <li>BICHITA</li>
                     <li>BBCITA</li>
                     <li>BRRRRRRR</li>
+                    <li>none</li>
                 </ul>
             </div>
-        </>
+        </Fragment>
     )
 }
+
+export default Name
